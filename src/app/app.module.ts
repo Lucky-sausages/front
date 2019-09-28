@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { PostsComponent } from './posts/posts.component';
-import { FilterComponent } from './filter/filter.component';
 import { AddLinkComponent } from './add-link/add-link.component';
 import { RegAndLogComponent } from './reg-and-log/reg-and-log.component';
 import {RouterModule} from '@angular/router';
@@ -18,7 +17,6 @@ import {HttpClientModule} from '@angular/common/http';
   declarations: [
     AppComponent,
     PostsComponent,
-    FilterComponent,
     AddLinkComponent,
     RegAndLogComponent
   ],

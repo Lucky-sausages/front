@@ -26,7 +26,7 @@ export class RegAndLogComponent {
       this.userService.login(this.user.login, this.user.password).subscribe(
         (res: any ) => {localStorage.setItem('token', res.token);
           localStorage.setItem('name', this.user.login);
-          this.message = 'Login done'; },
+          this.message = 'Login done'; this.router.navigate(['/posts']); },
         error => this.error = error.error.message);
     }
     if (buttonType === 'Reg') {

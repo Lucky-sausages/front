@@ -18,4 +18,11 @@ export class UserService {
       params: new HttpParams().set('login', login).set('password', password)
     });
   }
+  public get logIn(): boolean {
+    return (localStorage.getItem('token') !== null);
+  }
+  public logout() {
+    localStorage.removeItem('token');
+    localStorage.removeItem('name');
+  }
 }

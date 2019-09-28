@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {UserService} from '../service/user.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-bubble',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PostsComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private router: Router, private userService: UserService) {
+    this.login = localStorage.getItem('name');
+  }
+  login: string;
   ngOnInit() {
   }
+
 
 }
