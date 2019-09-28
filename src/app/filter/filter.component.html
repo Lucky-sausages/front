@@ -1,0 +1,24 @@
+<div class="filter">
+  <div class="buble">
+    <button class="phb" style="border-radius: 20px 20px 0px 0px; ">Все</button>
+    <input type="text" id="person"
+           value="Поиск" onfocus="if (this.value == 'Поиск') {this.value = ''; this.style.color = '#000';}"
+           onblur="if (this.value == '') {this.value = 'Поиск'; this.style.color = '#777';}"/>
+    <!--подумать головой и придумать какую-нибудь красивую штуку с вводом текста-->
+    <button class="phb">Выбрать человека</button>
+
+    <select class="chgr">
+      <option value="1" selected disabled>
+        <div style="color: #f00;">Выбор группы</div>
+      </option>
+      <option value="2">Группа1</option>
+      <option value="3">Группа2</option>
+      <option value="4">Группа3</option>
+      <option value="5">Группа4</option>
+    </select>
+    <button class="phb group" style="border-radius: 0px 0px 20px 20px;">Выбрать группу</button>
+
+  </div>
+
+
+</div>

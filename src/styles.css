@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  background-color: lightgreen;
+  margin:  100px 0px 0px 0px;
+  line-height: 24px;
+}

@@ -1,0 +1,138 @@
+.buble{
+  background-color: white;
+  width: 600px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 20px;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 0 0 3px #999;
+}
+.filter{
+  float:right;
+
+  margin-top: 0px;
+  width: 380px;
+  margin-left: 0px;
+
+}
+
+.filter .buble{
+  width: 380px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+
+}
+
+.line{
+  width: 500px;
+}
+
+.phb:hover
+{
+  background-color: #cfc;
+}
+
+
+.phb{
+  width: 380px;
+  height: 40px;
+  margin-left: 0px;
+  margin-top: 0px;
+  background-color: white;
+  box-shadow: 0 0 0 0 #fff;
+  border: 0;
+  padding: 0;
+  font-family: Bradley Hand, cursive;
+  font-size: 17px;
+}
+
+#person{
+  width: 336px;
+  height: 40px;
+  margin-left: 20px;
+  border: 0px solid #cccccc;
+  font-family: Bradley Hand, cursive;
+  font-size: 17px;
+  color : #777;
+  border-bottom: 1px dashed #000;
+}
+
+select{
+  width: 340px;
+  height: 40px;
+  margin-left: 20px;
+  margin-top: 0px;
+
+  background-color: #ffff;
+  box-shadow: 0 0 0 0 #ffff;
+  border: 0;
+  padding: 0;
+  font-family: Bradley Hand, cursive;
+  font-size: 17px;
+}
+
+.buble{
+  background-color: white;
+  width: 600px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 20px;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 0 0 3px #999;
+}
+
+.new_text{
+  font-family: cursive;
+  margin: 10px 20px 5px 20px;
+  font-size: 15px;
+}
+
+/*фотография профиля*/
+.new_per_pic{
+  height: 50px;
+  width:  50px;
+  border-radius: 10px 10px 10px 10px;
+  margin: 20px 20px 10px 20px;
+  float: left;
+}
+/*картинка*/
+.new_pic{
+  margin: 10px 20px 10px 20px;
+  border-radius: 10px 10px 10px 10px;
+  max-width:  560px;
+  max-height: 560px;
+}
+
+.new_name{
+  font-family: Bradley Hand, cursive;
+  font-size: 17px;
+  margin: 20px 20px 0px 0px;
+  color: green;
+}
+
+.new_time{
+  font-family: Bradley Hand, cursive;
+  font-size: 10px;
+  color: gray;
+  margin: 0px 0px 10px 0px;
+}
+/* "+" кнопка сохранения поста */
+.save{
+  float: right;
+  margin-right: 50px;
+  font-family: Comic Sans, cursive;
+  height: 40px;
+  width:  40px;
+  border-radius: 50%;
+  font-size: 30px;
+  background-color: white;
+  box-shadow: 0 0 0 0 #fff;
+  border: 0;
+  padding: 0;
+  color: gray;
+}
+
+.save:hover{
+  color: white;
+  background-color: gray;
+}
