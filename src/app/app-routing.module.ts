@@ -10,7 +10,6 @@ const routes: Routes = [
   { path: 'posts', component: PostsComponent },
   { path: 'addlink', component: AddLinkComponent},
   { path: 'reg', component: RegAndLogComponent}
-
 ];
 
 @NgModule({

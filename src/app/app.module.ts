@@ -9,6 +9,9 @@ import { AddLinkComponent } from './add-link/add-link.component';
 import { RegAndLogComponent } from './reg-and-log/reg-and-log.component';
 import {RouterModule} from '@angular/router';
 import {AppRoutingModule} from './app-routing.module';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {UserService} from './service/user.service';
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -21,9 +24,12 @@ import {AppRoutingModule} from './app-routing.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

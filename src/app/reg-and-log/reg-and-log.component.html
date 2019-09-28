@@ -1,15 +1,29 @@
-
 <div class="block">
-  <div  class="buble login"
-        style=" font-family: cursive; font-size: 15px;">
+  <div class="buble login"
+       style=" font-family: cursive; font-size: 15px;">
     <br>
-    <h1>Вход</h1>
-    <table class="text">
-      <tr><td>Логин</td><td><input type="text" id="loginL" style="color: #777" value = "Введите логин" onfocus="if (this.value == 'Введите логин') {this.value = ''; this.style.color = '#000';}" onblur="if (this.value == '') {this.value = 'Введите логин'; this.style.color = '#777';}"></td></tr>
-      <tr><td>Пароль</td><td><input type="password" id="passwordL"></td></tr>
-    </table>
-    <div class="centre" >
-      <button>Войти</button> или <button>Зарегестрироваться</button> <!-- сюда подтягивать действие -->
-    </div>
+    <form (ngSubmit)="onSubmit(buttonType)"  #userForm="ngForm">
+      <h1>Вход</h1>
+      <table class="text">
+        <tr>
+          <td>Логин</td>
+          <td><input type="text" id="loginL" [(ngModel)]="user.login" style="color: #777" value="Введите логин"
+                     class="form-control" id="login" name="login"
+                     onfocus="if (this.value == 'Введите логин') {this.value = ''; this.style.color = '#000';}"
+                     onblur="if (this.value == '') {this.value = 'Введите логин'; this.style.color = '#777';}"
+                     required #name="ngModel"></td>
+        </tr>
+        <tr>
+          <td>Пароль</td>
+          <td><input type="password" id="passwordL" [(ngModel)]="user.password"
+                     class="form-control" id="password" name="password" required #name="ngModel"></td>
+        </tr>
+      </table>
+      <div class="centre">
+        <button type="submit" (click)="onSubmit('Log')">Войти</button>
+        или
+        <button type="submit" (click)="onSubmit('Reg')">Зарегестрироваться</button> <!-- сюда подтягивать действие -->
+      </div>
+    </form>
   </div>
 </div>
