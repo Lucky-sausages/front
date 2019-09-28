@@ -136,3 +136,48 @@ select{
   color: white;
   background-color: gray;
 }
+
+.renew{
+    background-color: green;
+    color: white;
+     height: 40px;
+     width: 600px;
+     font-size: 20px;
+     font-family: cursive;
+     box-shadow: 0 0 0 0 green;
+  border-radius: 20px 20px 20px 20px;
+  border: 0;
+  padding: 0;
+}
+
+.renew:hover{
+  background: #cfc;
+  color: black;
+}
+
+.page_footer {
+    position: fixed;
+    height: 40px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 120;
+    direction: ltr;
+    background-color: #0000;
+}
+
+.footbtn{
+    font-size: 17px;
+    margin-left:  629px;
+    width: 380px;
+    color: white;
+    background-color:green;
+    border-radius: 20px 20px 20px 20px;
+    font-family: Bradley Hand, cursive;
+    border: 0px;
+}
+.footbtn:hover
+{
+    background: #cfc;
+    color: black;
+}
