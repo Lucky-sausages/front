@@ -12,18 +12,26 @@ export class RegAndLogComponent {
 
   user: User;
   buttonType: String;
-
+  message: String;
+  error: String;
   constructor(private route: ActivatedRoute, private router: Router, private userService: UserService) {
     this.user = new User();
+    this.error = '';
+    this.message = '';
   }
 
 
   onSubmit(buttonType: any) {
     if (buttonType === 'Log') {
-      this.router.navigate(['/posts']);
+      this.userService.login(this.user.login, this.user.password).subscribe(
+        (res: any ) => {localStorage.setItem('token', res.token);
+          localStorage.setItem('name', this.user.login);
+          this.message = 'Login done'; },
+        error => this.error = error.error.message);
     }
     if (buttonType === 'Reg') {
-      this.userService.save(this.user).subscribe(result => this.router.navigate(['/posts']));
+      this.userService.save(this.user).subscribe(result => { this.error = ''; this.message = 'User added'; },
+        error => this.error = error.error.message);
     }
   }
 }

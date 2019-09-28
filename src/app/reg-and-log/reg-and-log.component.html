@@ -4,6 +4,8 @@
     <br>
     <form (ngSubmit)="onSubmit(buttonType)"  #userForm="ngForm">
       <h1>Вход</h1>
+      <div [hidden]="" class="alert alert-danger" *ngIf="error.length > 0">{{ error }}</div>
+      <div [hidden]=""  *ngIf="message.length > 0">{{ message }}</div>
       <table class="text">
         <tr>
           <td>Логин</td>
