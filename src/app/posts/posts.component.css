@@ -136,3 +136,11 @@ select{
   color: white;
   background-color: gray;
 }
+.image{
+  display: inline;
+}
+li {
+  list-style-type: none; /* Убираем маркеры */
+}
+
+

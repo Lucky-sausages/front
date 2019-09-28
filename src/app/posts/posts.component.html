@@ -24,13 +24,12 @@
     <table style="margin-left: 20px;">
       <div class="line">
         <tr>
-          <td><input type="checkbox"></td>
-          <td>Последний</td>
-          <td><select name="timePeriod" style="     width: 185px;">
-            <option value="1" selected>Час</option>
-            <option value="2">День</option>
-            <option value="3">Неделя</option>
-            <option value="4">Месяц</option>
+          <td>Промежуток</td>
+          <td><select name="timePeriod" style="width: 185px;">
+            <option value="1" selected>Последний час</option>
+            <option value="2">Последний день</option>
+            <option value="3">Последний неделя</option>
+            <option value="4">Последний месяц</option>
           </select></td>
         </tr>
       </div>
@@ -58,48 +57,22 @@
   </div>
 </div>
 
-
-<div class="buble">
-  <img class="new_per_pic" src="/img/S4MGhA4hWFU.jpg">
-  <br><a class="new_name" href="http://vk.com/feed">Person's Name</a>
-  <button class="save">+</button> <!--кнопка сохранения в список?-->
-  <div class="new_time">
-    20 апр в 16:07
-  </div>
-
-
-  <div class="new_text">new comes here new comes here new comes here new comes here new comes here new comes here
-    new comes here new comes here new comes here new comes here new comes here new comes here
-    new comes here new comes here new comes here new comes here new comes here new comes here
-    new comes here new comes here new comes here new comes here new comes here new comes here
-
-  </div>
-
-  <!-- ATT сюда я хочу получать куски в формате
-    <img class="new_pic" src="ссылка" style="width: N%"
-    где N = 100%, если картинка одна
-    и N = 40% во всех остальных случаях-->
-  <img class="new_pic" src="/img/vor.jpeg" style="width: 40%">
-  <img class="new_pic" src="/img/S4MGhA4hWFU.jpg" style="width: 40%">
-
-</div>
 <ul>
-  <li *ngFor="let item of items">
+  <li *ngFor="let post of posts">
     <div class="buble">
-      <img class="new_per_pic" src="/img/cY5JmWPw1cA.jpg"{{item.user_image}}>
-      <br><a class="new_name" href="http://vk.com/feed">{{item.user_name}}</a>
+      <img class="new_per_pic" src="../../assets/img/manage-icon-png-29.jpg" >
+      <br><a class="new_name" >{{post.person}}</a>
       <button class="save">+</button>
       <div class="new_time">
-        {{item.date}}
+        {{post.date}}
       </div>
 
       <div class="new_text">
-        {{item.text}}
+        {{post.text}}
       </div>
-      <img class="new_pic" src="/img/GT32uw.png" style="width: 40%">
-      <img class="new_pic" src="/img/GT32uw.png" style="width: 40%">
-      <img class="new_pic" src="/img/GT32uw.png" style="width: 40%">
-      <img class="new_pic" src="/img/GT32uw.png" style="width: 40%">
+      <div class="image" *ngFor="let media of post.media">
+        <img class="new_pic" src="{{media}}" >
+      </div>
     </div>
   </li>
 </ul>

@@ -12,6 +12,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {UserService} from './service/user.service';
 import {HttpClientModule} from '@angular/common/http';
 import {PeopleService} from './service/people.service';
+import {PostService} from './service/post.service';
 
 
 @NgModule({
@@ -28,7 +29,7 @@ import {PeopleService} from './service/people.service';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [UserService, PeopleService],
+  providers: [UserService, PeopleService, PostService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
