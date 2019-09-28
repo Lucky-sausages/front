@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {People} from '../model/people';
+import {PeopleService} from '../service/people.service';
 
 @Component({
   selector: 'app-add-link',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddLinkComponent implements OnInit {
 
-  constructor() { }
+  people: People;
+  message: String;
+  error: String;
+  constructor(private peopleService: PeopleService) {
+    this.error = '';
+    this.people = new People();
+    this.message = '';
+  }
 
   ngOnInit() {
   }
 
+  onSubmit() {
+    this.peopleService.save(this.people).subscribe(result => { this.error = ''; this.message = 'User added'; },
+      error => this.error = error.error.message);
+  }
 }

@@ -11,6 +11,7 @@ import {AppRoutingModule} from './app-routing.module';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {UserService} from './service/user.service';
 import {HttpClientModule} from '@angular/common/http';
+import {PeopleService} from './service/people.service';
 
 
 @NgModule({
@@ -27,7 +28,7 @@ import {HttpClientModule} from '@angular/common/http';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [UserService],
+  providers: [UserService, PeopleService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
