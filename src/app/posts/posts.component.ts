@@ -24,33 +24,8 @@ export class PostsComponent implements OnInit {
   }
 
   findAll() {
-    /*
     this.postService.findAll().subscribe(data => {
       this.posts = data;
     });
-     */
-    this.posts = [
-      {
-        text: 'lalala',
-        person: 'name',
-        date: '1.1.1',
-        media: ['https://sun9-57.userapi.com/c850216/v850216679/1ccb98/tPeofQX77BQ.jpg?ava=1',
-          'https://sun9-57.userapi.com/c850216/v850216679/1ccb98/tPeofQX77BQ.jpg?ava=1',
-          'https://sun9-57.userapi.com/c850216/v850216679/1ccb98/tPeofQX77BQ.jpg?ava=1',
-          'https://sun9-57.userapi.com/c850216/v850216679/1ccb98/tPeofQX77BQ.jpg?ava=1',
-          'https://sun9-57.userapi.com/c850216/v850216679/1ccb98/tPeofQX77BQ.jpg?ava=1',
-          'https://sun9-57.userapi.com/c850216/v850216679/1ccb98/tPeofQX77BQ.jpg?ava=1',
-          'https://sun9-57.userapi.com/c850216/v850216679/1ccb98/tPeofQX77BQ.jpg?ava=1',
-          'https://sun9-57.userapi.com/c850216/v850216679/1ccb98/tPeofQX77BQ.jpg?ava=1',
-          'https://sun9-57.userapi.com/c850216/v850216679/1ccb98/tPeofQX77BQ.jpg?ava=1',
-          'https://sun9-57.userapi.com/c850216/v850216679/1ccb98/tPeofQX77BQ.jpg?ava=1']
-      },
-      {
-        text: 'lalala',
-        person: 'name',
-        date: '1.1.1',
-        media: ['https://sun9-57.userapi.com/c850216/v850216679/1ccb98/tPeofQX77BQ.jpg?ava=1']
-      }
-    ];
   }
 }

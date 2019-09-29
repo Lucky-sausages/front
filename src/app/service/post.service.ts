@@ -9,7 +9,7 @@ export class PostService {
   private postsUrl: string;
 
   constructor(private http: HttpClient, private userService: UserService) {
-    this.postsUrl = ''; /*Здесь будет ссылка на запрос*/
+    this.postsUrl = 'http://localhost:8080/api/posts'; /*Здесь будет ссылка на запрос*/
   }
 
   public findAll(): Observable<Post[]> {
