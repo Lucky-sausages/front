@@ -27,4 +27,7 @@ export class AppComponent {
   public add() {
     this.router.navigate(['/addlink']);
   }
+  public posts() {
+    this.router.navigate(['/posts']);
+  }
 }

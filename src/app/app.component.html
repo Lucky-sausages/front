@@ -9,6 +9,9 @@
       <td class="lout" style="margin-top: 10px; left: 0px; width: 300px"  *ngIf="isLogIn">
         <button class="lout" (click)="add()" *ngIf="isLogIn">Добавить</button>
       </td>
+      <td class="lout" style="margin-top: 10px; left: 0px; width: 300px"  *ngIf="isLogIn">
+        <button class="lout" (click)="posts()" *ngIf="isLogIn">Лента</button>
+      </td>
       <td class="lout" style="margin-top: 10px; left: 0px; width: 300px" *ngIf="isLogIn">
         <button class="lout" (click)="logout()">Выход</button>
       </td>
