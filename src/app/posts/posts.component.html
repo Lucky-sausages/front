@@ -1,10 +1,12 @@
+<!--
+
 <div class="filter">
   <div class="buble">
     <button class="phb" style="border-radius: 20px 20px 0px 0px; ">Все</button>
     <input type="text" id="person"
            value="Поиск" onfocus="if (this.value == 'Поиск') {this.value = ''; this.style.color = '#000';}"
            onblur="if (this.value == '') {this.value = 'Поиск'; this.style.color = '#777';}"/>
-    <!--подумать головой и придумать какую-нибудь красивую штуку с вводом текста-->
+
     <button class="phb">Выбрать человека</button>
 
     <select class="chgr">
@@ -56,12 +58,12 @@
     </table>
   </div>
 </div>
-
+-->
 <ul>
   <li *ngFor="let post of posts">
     <div class="buble">
       <img class="new_per_pic" src="../../assets/img/manage-icon-png-29.jpg" >
-      <br><a class="new_name" >{{post.person}}</a>
+      <br><a class="new_name" >User</a>
       <button class="save">+</button>
       <div class="new_time">
         {{post.date}}
@@ -71,7 +73,7 @@
         {{post.text}}
       </div>
       <div class="image" *ngFor="let media of post.media">
-        <img class="new_pic" src="{{media.link}}" >
+        <img class="new_pic" src="{{media.link}}" style="width: 150px" >
       </div>
     </div>
   </li>
