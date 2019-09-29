@@ -4,9 +4,11 @@
     <br>
     <form (ngSubmit)="onSubmit()" #peopleForm="ngForm">
       <h1>Добавить информацию</h1>
+      <div [hidden]="" class="alert alert-danger" *ngIf="error.length > 0">{{ error }}</div>
       <input type="text" style="color: #777; margin-left: 65px; width: 500px; " value="Введите имя" [(ngModel)]="people.name" name="name" id="name"
              onfocus="if (this.value == 'Введите имя') {this.value = ''; this.style.color = '#000';}"
-             onblur="if (this.value == '') {this.value = 'Введите имя'; this.style.color = '#777';}">
+             onblur="if (this.value == '') {this.value = 'Введите имя'; this.style.color = '#777';}"
+             required #name="ngModel">
       <div class="text">
         <img src="../../assets/img/logo/vkontakte_PNG25.png" style="width: 40px;">
         <input type="text" disabled style="color: #000; background-color: white; width: 205px;" value="vk.com/">

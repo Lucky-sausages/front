@@ -22,7 +22,7 @@ export class AddLinkComponent implements OnInit {
   }
 
   onSubmit() {
-    this.peopleService.save(this.people).subscribe(result => { this.error = ''; this.message = 'User added'; },
+    this.peopleService.save(this.people).subscribe(result => { this.error = ''; this.message = 'Post added'; },
       error => this.error = error.error.message);
   }
 }
